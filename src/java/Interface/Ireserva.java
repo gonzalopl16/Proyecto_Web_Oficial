@@ -16,8 +16,5 @@ public interface Ireserva {
     public void agregarReserva(reserva r);
     public void modificarReserva(reserva r);
     public List<reserva> listaTotal();
-    public List<reserva> listaFiltro(String codigo);
     public reserva consultaReserva(String codigo);
-    public usuario consultaUsuario(String codigo);
-    public usuario consultaMesa(String codigo);
 }

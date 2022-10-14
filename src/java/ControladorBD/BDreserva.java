@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class BDreserva implements Ireserva {
 
     usuario u = new usuario();
+    BDusuario bu = new BDusuario();
     detalle d = new detalle();
     BDdetallereserva bdr = new BDdetallereserva();
     mesa m = new mesa();
@@ -22,14 +23,14 @@ public class BDreserva implements Ireserva {
     public void agregarReserva(reserva r) {
         Connection cn = MySQLConexion.getConexion();
         try {
-            String sql = "insert into reserva (ID_Reserva, usuario, detalle, cantidadPersonas, mesa, fecha) values (?,?,?,?,?,?)";
+            String sql = "insert into reserva (codigoReserva, codigoUsuario, codigoMesa, personas, Fecha) values (?,?,?,?,?)";
             PreparedStatement pr = cn.prepareStatement(sql);
             pr.setString(1, r.getCodigoReserva());
             pr.setString(2, r.getUsuario().getCodigoUsuario());
             pr.setString(3, r.getMesa().getCodigoMesa());
             pr.setInt(4, r.getPersonas());
             pr.setString(5, r.getFecha());
-            ResultSet rs = pr.executeQuery();
+            pr.executeQuery();
         } catch (SQLException ex) {
         } finally {
             try {
@@ -44,9 +45,9 @@ public class BDreserva implements Ireserva {
     public void modificarReserva(reserva r) {
         Connection cn = MySQLConexion.getConexion();
         try {
-            String sql = "update reserva set usuario=?, detalle=?, cantidadPersonas=?, mesa=?, fecha=? where ID_Reserva=" + r.getCodigoReserva();
+            String sql = "update reserva set codigoReserva=?, codigoUsuario=?, mesa=?, personas=?, Fecha=? where codigoReserva=" + r.getCodigoReserva();
             PreparedStatement pr = cn.prepareStatement(sql);
-            pr.setString(1, r.getUsuario().getCodigoUsuario());
+            pr.setString(1, r.getCodigoReserva());
             pr.setString(2, r.getUsuario().getCodigoUsuario());
             pr.setString(3, r.getMesa().getCodigoMesa());
             pr.setInt(4, r.getPersonas());
@@ -75,11 +76,11 @@ public class BDreserva implements Ireserva {
             ResultSet rs = pr.executeQuery();
             while(rs.next()){
                 r = new reserva();
-                r.setCodigoReserva(rs.getString("ID_Reserva"));
-                u = consultaUsuario(rs.getString("ID_Usuario"));
+                r.setCodigoReserva(rs.getString("codigoReserva"));
+                u = bu.consultaUsuario(rs.getString("codigoUsuario"));
+                m = bm.consultarMesa(rs.getString("mesa"));
                 r.setUsuario(u);
-                r.setPersonas(rs.getInt("CantidadPersonas"));
-                m = bm.consultarMesa(rs.getString("ID_Mesa"));
+                r.setPersonas(rs.getInt("personas"));
                 r.setMesa(m);
                 r.setFecha(rs.getString("Fecha"));
                 list.add(r);
@@ -97,38 +98,32 @@ public class BDreserva implements Ireserva {
 
     @Override
     public reserva consultaReserva(String codigo) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public usuario consultaUsuario(String codigo) {
+        reserva r = null;
         Connection cn = MySQLConexion.getConexion();
-        usuario c = null;
         try {
-            String sql = "select r.ID_Usuario"
-                    + " from reserva r inner join usuario u on(r.ID_Usuario=u.ID_Usuario)"
-                    + " where r.ID_Reserva=?";
-            PreparedStatement pr = cn.prepareStatement(sql);
-            pr.setString(1, codigo);
-            ResultSet rs = pr.executeQuery();
-            while (rs.next()) {
-                c = new usuario();
-                /*c.setCodigo(rs.getString(1));*/
+            String sql = "select codigoReserva, codigoUsuario, codigoMesa, personas, Fecha from reserva where codigoReserva=" + codigo;
+            PreparedStatement st = cn.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+            if (rs.next()) {
+                r = new reserva();
+                r.setCodigoReserva(rs.getString(1));
+                u = bu.consultaUsuario(rs.getString(2));
+                r.setUsuario(u);
+                m = bm.consultarMesa(rs.getString(3));
+                r.setMesa(m);
+                r.setPersonas(rs.getInt(4));
+                r.setFecha(rs.getString(5));
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                cn.close();
+            } catch (Exception e2) {
+
+            }
         }
-        return c;
-    }
-
-    @Override
-    public usuario consultaMesa(String codigo) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<reserva> listaFiltro(String codigo) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return r;
     }
 
     public int topeReserva(){

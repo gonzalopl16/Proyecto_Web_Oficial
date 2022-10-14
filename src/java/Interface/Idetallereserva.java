@@ -6,12 +6,17 @@
 package Interface;
 
 import Modelo.*;
+import java.util.List;
 
 /**
  *
  * @author Sebastian Palomino Vivanco <your.name at your.org>
  */
 public interface Idetallereserva {
-    public detalle Consultar(String ID_Reserva);
+    public void añadirDetalle(detalle d);
+    public void modificarDetalle(detalle d);
+    public void eliminarDetalle(String codigo);
+    public List<reserva> listaTotal();
+    public detalle ConsultarDetalle(String codigo);
     
 }

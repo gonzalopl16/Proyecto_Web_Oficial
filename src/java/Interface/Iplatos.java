@@ -1,17 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interface;
 
 import Modelo.*;
 import java.util.List;
 
-/**
- *
- * @author Sebastian Palomino Vivanco <your.name at your.org>
- */
 public interface Iplatos {
     public List<platos> listaTotal();
+    public platos consultarPlato(String codigo);
 }
