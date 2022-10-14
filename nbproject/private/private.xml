@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Modelo/ClaseDetalleReserva.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Ireserva.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/CodigoBD/BDdetallereserva.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Imesa.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/web/reserva.jsp</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/web/guardar.jsp</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Iusuario.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Modelo/ClaseReserva.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/ConexionBD/MySQLConexion.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Iplatos.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Controlador/controlEmpleado.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Iempleado.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/web/index.jsp</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Controlador/controlReserva.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/CodigoBD/BDusuario.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Idetallereserva.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/CodigoBD/BDreserva.java</file>
+        </group>
+    </open-files>
+</project-private>
