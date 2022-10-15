@@ -21,8 +21,6 @@ public class pruebasbd {
     public static void main(String[] args) {
         reservaBD r = new reservaBD();
         reserva re = new reserva("R00001", "", "",3, "2022-10-16");
-        reserva re2 = r.consultaReserva(re.getCodigoReserva());
-        System.out.println(re2.getFecha());
+        r.añadirReserva(re);
     }
-    
 }

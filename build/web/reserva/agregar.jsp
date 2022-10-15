@@ -11,7 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <script type="text/javascript" src="../script/funcion.js"></script>
+        <script type="text/javascript" src="script/funcion.js"></script>
     </head>
     <body>
         <h1>PAGINA DE RESERVA</h1>
