@@ -3,12 +3,20 @@ package Modelo;
 
 public class reserva {
     private String codigoReserva;
-    private usuario usuario;
-    private mesa mesa;
+    private String codigoUsuario;
+    private String codigoMesa;
     private int personas;
     private String fecha;
 
     public reserva() {
+    }
+
+    public reserva(String codigoReserva, String codigoUsuario, String codigoMesa, int personas, String fecha) {
+        this.codigoReserva = codigoReserva;
+        this.codigoUsuario = codigoUsuario;
+        this.codigoMesa = codigoMesa;
+        this.personas = personas;
+        this.fecha = fecha;
     }
 
     public String getCodigoReserva() {
@@ -19,20 +27,20 @@ public class reserva {
         this.codigoReserva = codigoReserva;
     }
 
-    public usuario getUsuario() {
-        return usuario;
+    public String getCodigoUsuario() {
+        return codigoUsuario;
     }
 
-    public void setUsuario(usuario usuario) {
-        this.usuario = usuario;
+    public void setCodigoUsuario(String codigoUsuario) {
+        this.codigoUsuario = codigoUsuario;
     }
 
-    public mesa getMesa() {
-        return mesa;
+    public String getCodigoMesa() {
+        return codigoMesa;
     }
 
-    public void setMesa(mesa mesa) {
-        this.mesa = mesa;
+    public void setCodigoMesa(String codigoMesa) {
+        this.codigoMesa = codigoMesa;
     }
 
     public int getPersonas() {
@@ -50,5 +58,6 @@ public class reserva {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
+
     
 }

@@ -4,13 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Modelo/empleado.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Controlador/controlPlatos.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Ireserva.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/ControladorBD/BDdetallereserva.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Iusuario.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/ConexionBD/MySQLConexion.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Iplatos.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/ControladorBD/BDmesa.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/BaseDatos/TodoBaseDatos.sql</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/web/iniciar/sesion.jsp</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Controlador/controlDetalleReserva.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/ControladorBD/BDempleado.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/web/reserva/agregar.jsp</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Modelo/detalle.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/ControladorBD/BDreserva.java</file>
@@ -21,6 +25,7 @@
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/web/script/funcion.js</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Controlador/controlEmpleado.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Modelo/usuario.java</file>
+            <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/ConexionBD/prueba.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Modelo/reserva.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/src/java/Interface/Iempleado.java</file>
             <file>file:/C:/Users/USER/Documents/Programacion%20Orientada%20a%20Objetos/Web%20Integrado/Proyecto-Integrador_WEB/web/index.jsp</file>

@@ -3,14 +3,23 @@ package Modelo;
 
 public class detalle {
     private String codigoDetalle;
-    private reserva reserva;
-    private platos platos;
+    private String codigoReserva;
+    private String codigoPlato;
     private int cantidad;
     private double precio;
 
     public detalle() {
     }
 
+    public detalle(String codigoDetalle, String codigoReserva, String codigoPlato, int cantidad, double precio) {
+        this.codigoDetalle = codigoDetalle;
+        this.codigoReserva = codigoReserva;
+        this.codigoPlato = codigoPlato;
+        this.cantidad = cantidad;
+        this.precio = precio;
+    }
+
+    
     public String getCodigoDetalle() {
         return codigoDetalle;
     }
@@ -19,20 +28,20 @@ public class detalle {
         this.codigoDetalle = codigoDetalle;
     }
 
-    public reserva getReserva() {
-        return reserva;
+    public String getCodigoReserva() {
+        return codigoReserva;
     }
 
-    public void setReserva(reserva reserva) {
-        this.reserva = reserva;
+    public void setCodigoReserva(String codigoReserva) {
+        this.codigoReserva = codigoReserva;
     }
 
-    public platos getPlatos() {
-        return platos;
+    public String getCodigoPlato() {
+        return codigoPlato;
     }
 
-    public void setPlatos(platos platos) {
-        this.platos = platos;
+    public void setCodigoPlato(String codigoPlato) {
+        this.codigoPlato = codigoPlato;
     }
 
     public int getCantidad() {
@@ -51,6 +60,7 @@ public class detalle {
         this.precio = precio;
     }
 
+    
    
 
     
